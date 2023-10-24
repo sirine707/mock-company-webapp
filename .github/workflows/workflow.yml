@@ -10,6 +10,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
       - name: Execute Jenkinsfile
-        uses: sirine707/mock-company-webapp/Jenkinsfile@master
+        uses: jenkinsci/jfr-container-action@master
         with:
+          command: run
           jenkinsfile: Jenkinsfile
