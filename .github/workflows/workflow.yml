@@ -6,6 +6,8 @@ name: Jenkinsfile Runner CI
 jobs:
   jenkinsfile-runner:
     runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/jenkinsci/jenkinsfile-runner:master
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
